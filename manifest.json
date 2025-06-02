@@ -23,5 +23,17 @@
     "storage",
     "unlimitedStorage",
     "fileSystem"
-  ]
+  ],
+  "id": ".",
+  "launch_handler": {
+    "client_mode": ["navigate-existing", "focus-existing", "auto"]
+  },
+  "screenshots": [
+    {
+      "src": "./screenshot-placeholder.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ],
+  "display_override": ["window-controls-overlay", "browser"]
 } 
