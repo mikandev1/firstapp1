@@ -6,12 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1976d2">
   <meta name="description" content="تطبيق لإدارة الدراسات والبيانات">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="تطبيق دراسات">
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="icon-192x192.png">
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF0WlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNy4yLWMwMDAgNzkuMWI2NWE3OWI0LCAyMDIyLzA2LzEzLTIyOjAxOjAxICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdEV2dD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlRXZlbnQjIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgMjQuMCAoTWFjaW50b3NoKSIgeG1wOkNyZWF0ZURhdGU9IjIwMjQtMDItMTlUMTU6NDc6NDctMDg6MDAiIHhtcDpNZXRhZGF0YURhdGU9IjIwMjQtMDItMTlUMTU6NDc6NDctMDg6MDAiIHhtcDpNb2RpZnlEYXRlPSIyMDI0LTAyLTE5VDE1OjQ3OjQ3LTA4OjAwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY5ZDEzZjM5LTU2ZDAtNDZiZC1hMzA2LTNmYzM5ZjM5ZjM5ZiIgeG1wTU06RG9jdW1lbnRJRD0iYWRvYmU6ZG9jaWQ6cGhvdG9zaG9wOjY5ZDEzZjM5LTU2ZDAtNDZiZC1hMzA2LTNmYzM5ZjM5ZjM5ZiIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ4bXAuZGlkOjY5ZDEzZjM5LTU2ZDAtNDZiZC1hMzA2LTNmYzM5ZjM5ZjM5ZiIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiPiA8eG1wTU06SGlzdG9yeT4gPHJkZjpTZXE+IDxyZGY6bGkgc3RFdnQ6YWN0aW9uPSJjcmVhdGVkIiBzdEV2dDppbnN0YW5jZUlEPSJ4bXAuaWlkOjY5ZDEzZjM5LTU2ZDAtNDZiZC1hMzA2LTNmYzM5ZjM5ZjM5ZiIgc3RFdnQ6d2hlbj0iMjAyNC0wMi0xOVQxNTo0Nzo0Ny0wODowMCIgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWRvYmUgUGhvdG9zaG9wIDI0LjAgKE1hY2ludG9zaCkiLz4gPC9yZGY6U2VxPiA8L3htcE1NOkhpc3Rvcnk+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+">
   <style>
     body { 
@@ -74,17 +68,6 @@
       flex-wrap: wrap;
       gap: 5px;
       margin-top: 10px;
-    }
-    .export-btn, .import-btn {
-      background: #ff9800 !important;
-      margin-top: 10px;
-      margin-right: 5px;
-    }
-    .import-btn {
-      background: #2196f3 !important;
-    }
-    #fileInput {
-      display: none;
     }
     .notification {
       position: fixed;
@@ -170,6 +153,17 @@
         font-size: 14px;
       }
     }
+    .export-btn, .import-btn {
+      background: #ff9800 !important;
+      margin-top: 10px;
+      margin-right: 5px;
+    }
+    .import-btn {
+      background: #2196f3 !important;
+    }
+    #fileInput {
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -185,9 +179,9 @@
     <input type="text" placeholder="بحث..." onkeyup="search(this, 'data1')">
     <div id="form1Inputs"></div>
     <div class="import-export-buttons">
-      <button class="export-btn" onclick="exportToJSON('data1')">تصدير JSON</button>
-      <button class="import-btn" onclick="document.getElementById('fileInput1').click()">استيراد JSON</button>
-      <input type="file" id="fileInput1" accept=".json" onchange="importJSON(event, 'data1')" style="display: none;">
+      <button class="export-btn" onclick="exportToCSV('data1')">تصدير CSV</button>
+      <button class="import-btn" onclick="document.getElementById('fileInput1').click()">استيراد CSV</button>
+      <input type="file" id="fileInput1" accept=".csv" onchange="importCSV(event, 'data1')" style="display: none;">
     </div>
     <div id="data1" class="entries"></div>
   </section>
@@ -197,9 +191,9 @@
     <input type="text" placeholder="بحث..." onkeyup="search(this, 'data2')">
     <div id="form2Inputs"></div>
     <div class="import-export-buttons">
-      <button class="export-btn" onclick="exportToJSON('data2')">تصدير JSON</button>
-      <button class="import-btn" onclick="document.getElementById('fileInput2').click()">استيراد JSON</button>
-      <input type="file" id="fileInput2" accept=".json" onchange="importJSON(event, 'data2')" style="display: none;">
+      <button class="export-btn" onclick="exportToCSV('data2')">تصدير CSV</button>
+      <button class="import-btn" onclick="document.getElementById('fileInput2').click()">استيراد CSV</button>
+      <input type="file" id="fileInput2" accept=".csv" onchange="importCSV(event, 'data2')" style="display: none;">
     </div>
     <div id="data2" class="entries"></div>
   </section>
@@ -209,9 +203,9 @@
     <input type="text" placeholder="بحث..." onkeyup="search(this, 'data3')">
     <div id="form3Inputs"></div>
     <div class="import-export-buttons">
-      <button class="export-btn" onclick="exportToJSON('data3')">تصدير JSON</button>
-      <button class="import-btn" onclick="document.getElementById('fileInput3').click()">استيراد JSON</button>
-      <input type="file" id="fileInput3" accept=".json" onchange="importJSON(event, 'data3')" style="display: none;">
+      <button class="export-btn" onclick="exportToCSV('data3')">تصدير CSV</button>
+      <button class="import-btn" onclick="document.getElementById('fileInput3').click()">استيراد CSV</button>
+      <input type="file" id="fileInput3" accept=".csv" onchange="importCSV(event, 'data3')" style="display: none;">
     </div>
     <div id="data3" class="entries"></div>
   </section>
@@ -766,6 +760,218 @@
         };
         reader.readAsText(file);
         event.target.value = '';
+      }
+    }
+
+    function exportToCSV(containerId) {
+      try {
+        // جمع البيانات
+        const entries = [];
+        document.querySelectorAll(`#${containerId} .entry`).forEach(entry => {
+          const data = {};
+          entry.querySelectorAll('p').forEach(p => {
+            const [key, ...rest] = p.innerText.split(':');
+            data[key.trim()] = rest.join(':').trim();
+          });
+          entries.push(data);
+        });
+
+        if (entries.length === 0) {
+          showNotification('لا توجد بيانات للتصدير', 'warning');
+          return;
+        }
+
+        // إنشاء رأس CSV
+        const headers = Object.keys(entries[0]);
+        const csvContent = [
+          headers.join(','),
+          ...entries.map(entry => 
+            headers.map(header => {
+              const value = entry[header] || '';
+              // معالجة القيم التي تحتوي على فواصل أو علامات اقتباس
+              return `"${value.replace(/"/g, '""')}"`;
+            }).join(',')
+          )
+        ].join('\n');
+
+        // إنشاء ملف CSV
+        const blob = new Blob(['\ufeff' + csvContent], { type: 'text/csv;charset=utf-8;' });
+        
+        // استخدام طريقة متوافقة مع WebView
+        const fileName = `${containerId}_export_${new Date().toISOString().slice(0,10)}.csv`;
+        
+        // محاولة استخدام Android Interface
+        if (window.Android) {
+          try {
+            // تحويل Blob إلى Base64
+            const reader = new FileReader();
+            reader.onload = function() {
+              const base64 = reader.result.split(',')[1];
+              window.Android.saveFile(fileName, base64);
+            };
+            reader.readAsDataURL(blob);
+            return;
+          } catch (e) {
+            console.log('Android interface not available');
+          }
+        }
+        
+        // الطريقة البديلة
+        const link = document.createElement('a');
+        link.href = URL.createObjectURL(blob);
+        link.download = fileName;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(link.href);
+        
+        showNotification('تم تصدير البيانات بنجاح');
+      } catch (error) {
+        console.error('خطأ في تصدير البيانات:', error);
+        showNotification('حدث خطأ في تصدير البيانات', 'error');
+      }
+    }
+
+    function importCSV(event, containerId) {
+      const file = event.target.files[0];
+      if (!file) return;
+
+      // التحقق من نوع الملف
+      if (!file.name.toLowerCase().endsWith('.csv')) {
+        showNotification('يرجى اختيار ملف CSV صالح', 'error');
+        return;
+      }
+
+      // محاولة استخدام Android Interface
+      if (window.Android) {
+        try {
+          window.Android.pickFile();
+          return;
+        } catch (e) {
+          console.log('Android interface not available');
+        }
+      }
+
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const content = e.target.result;
+          const lines = content.split('\n');
+          
+          // قراءة الرأس
+          const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+          
+          // قراءة البيانات
+          const entries = [];
+          for (let i = 1; i < lines.length; i++) {
+            if (!lines[i].trim()) continue;
+            
+            const values = lines[i].split(',').map(v => v.trim().replace(/^"|"$/g, ''));
+            const entry = {};
+            headers.forEach((header, index) => {
+              entry[header] = values[index] || '';
+            });
+            entries.push(entry);
+          }
+
+          if (entries.length === 0) {
+            showNotification('لم يتم العثور على بيانات في الملف', 'warning');
+            return;
+          }
+
+          // تحديث واجهة المستخدم
+          const container = document.getElementById(containerId);
+          container.innerHTML = '';
+
+          entries.forEach((entry, index) => {
+            const entryDiv = document.createElement('div');
+            entryDiv.className = 'entry';
+            entryDiv.id = `${containerId}_entry_${index}`;
+
+            for (let key in entry) {
+              const p = document.createElement('p');
+              p.innerHTML = `<b>${key}:</b> ${entry[key]}`;
+              entryDiv.appendChild(p);
+            }
+
+            const controls = document.createElement('div');
+            controls.className = 'controls';
+            controls.innerHTML = `
+              <button type="button" onclick="editEntry(this, '${containerId}')">تعديل</button>
+              <button type="button" onclick="showDeleteConfirmation(this.closest('.entry'), '${containerId}')">حذف</button>
+              <button type="button" onclick="copyEntry(this.closest('.entry'))">نسخ</button>
+            `;
+            entryDiv.appendChild(controls);
+            container.appendChild(entryDiv);
+          });
+
+          saveToStorage(containerId);
+          showNotification(`تم استيراد ${entries.length} سجل بنجاح`);
+        } catch (error) {
+          console.error('خطأ في استيراد البيانات:', error);
+          showNotification('حدث خطأ في استيراد الملف. تأكد من صحة تنسيق CSV', 'error');
+        }
+      };
+      reader.onerror = function() {
+        showNotification('حدث خطأ في قراءة الملف', 'error');
+      };
+      reader.readAsText(file);
+      event.target.value = '';
+    }
+
+    // دالة لاستقبال البيانات من Android
+    function onFileSelected(content) {
+      try {
+        const lines = content.split('\n');
+        const headers = lines[0].split(',').map(h => h.trim().replace(/^"|"$/g, ''));
+        const entries = [];
+        
+        for (let i = 1; i < lines.length; i++) {
+          if (!lines[i].trim()) continue;
+          const values = lines[i].split(',').map(v => v.trim().replace(/^"|"$/g, ''));
+          const entry = {};
+          headers.forEach((header, index) => {
+            entry[header] = values[index] || '';
+          });
+          entries.push(entry);
+        }
+
+        if (entries.length === 0) {
+          showNotification('لم يتم العثور على بيانات في الملف', 'warning');
+          return;
+        }
+
+        // تحديث واجهة المستخدم
+        const container = document.getElementById('data1'); // أو أي containerId مناسب
+        container.innerHTML = '';
+
+        entries.forEach((entry, index) => {
+          const entryDiv = document.createElement('div');
+          entryDiv.className = 'entry';
+          entryDiv.id = `data1_entry_${index}`;
+
+          for (let key in entry) {
+            const p = document.createElement('p');
+            p.innerHTML = `<b>${key}:</b> ${entry[key]}`;
+            entryDiv.appendChild(p);
+          }
+
+          const controls = document.createElement('div');
+          controls.className = 'controls';
+          controls.innerHTML = `
+            <button type="button" onclick="editEntry(this, 'data1')">تعديل</button>
+            <button type="button" onclick="showDeleteConfirmation(this.closest('.entry'), 'data1')">حذف</button>
+            <button type="button" onclick="copyEntry(this.closest('.entry'))">نسخ</button>
+          `;
+          entryDiv.appendChild(controls);
+          container.appendChild(entryDiv);
+        });
+
+        saveToStorage('data1');
+        showNotification(`تم استيراد ${entries.length} سجل بنجاح`);
+      } catch (error) {
+        console.error('خطأ في استيراد البيانات:', error);
+        showNotification('حدث خطأ في استيراد الملف', 'error');
       }
     }
 
